@@ -8,7 +8,7 @@ services:
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'  # Autoriser un mot de passe vide
     ports:
-      - '3306:3306'  # Exposer le port
+      - '3307:3306'  # Exposer le port
     expose:
       - '3306'
     networks:
@@ -21,9 +21,9 @@ services:
     build: ./Discovery-Service
     container_name: labo_discovery_service
     ports:
-      - '8761 :8761'
+      - "8762:8761"
     expose:
-      - '8761'
+      - "8761"
     healthcheck:
       test: ["CMD","curl","http://localhost:8761/actuator/health"]
       interval: 10s

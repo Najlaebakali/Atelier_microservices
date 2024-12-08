@@ -51,6 +51,12 @@
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-prometheus</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/io.github.resilience4j/resilience4j-spring-boot3 -->
         <dependency>
